@@ -358,6 +358,7 @@ body {
 }
 
 .travel-card {
+  position: relative;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -365,6 +366,7 @@ body {
   width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .travel-card:hover {
   transform: translateY(-5px);
@@ -404,6 +406,7 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 2;
+  transition: transform 0.2s ease;
 }
 
 
@@ -693,6 +696,73 @@ body {
   text-decoration: underline;
 }
 
+/* popular page */
+
+.recommend-section {
+  padding: 50px 20px;
+  max-width: 1300px;
+  margin: auto;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #5e2b1d;
+  margin-bottom: 30px;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.recommend-card {
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.recommend-card:hover {
+  transform: translateY(-5px);
+}
+
+.recommend-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.recommend-card h3 {
+  font-size: 18px;
+  margin: 15px 0 5px;
+  color: #4b2b20;
+}
+
+.recommend-card p {
+  font-size: 14px;
+  padding: 0 15px 15px;
+  color: #444;
+}
+
+.explore-btn {
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background: linear-gradient(to right, #5e60ce, #4361ee);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .recommend-card img {
+    height: 150px;
+  }
+}
 
 
 
