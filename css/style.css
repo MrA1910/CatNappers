@@ -764,6 +764,118 @@ body {
   }
 }
 
+.review-hero {
+  background-color: #f8f8f8;
+  padding: 80px 20px 50px;
+  text-align: center;
+}
+
+.review-hero .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  font-weight: 500;
+}
+
+
+.review-grid {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.review-title {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* This is the container for all cards */
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 992px) {
+  .review-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .review-cards {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
+}
+
+/* Individual card style */
+.review-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Avatar image */
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Name and location */
+.review-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0 0;
+}
+
+.review-location {
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Stars and text */
+.review-stars {
+  color: #FFD700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
 
 
 /* Image Hover Zoom for cards */
