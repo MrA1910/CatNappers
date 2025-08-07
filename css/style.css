@@ -876,6 +876,208 @@ body {
 }
 
 
+.about-hero-section {
+  background-image: url('../images/about-bg.png'); /* ✅ Your uploaded image path */
+  background-size: 100% 100%; /* ✅ Stretch to fill entire section */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px 60px;
+  text-align: center;
+  height: 95vh;
+}
+
+
+.about-hero h2 {
+  font-size: 120px;
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.about-hero p {
+  font-size: 38px;
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 80px;
+}
+
+.about-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.about-images img {
+  position: absolute;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+  transform: scale(1.05);
+}
+
+
+.experience-section {
+  padding: 60px 30px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.experience-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.experience-section h2 span {
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.experience-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+.experience-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.experience-text {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  padding: 10px;
+  min-width: 280px;
+}
+
+.experience-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.experience-image img,
+.experience-video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.video-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .experience-text {
+    padding: 0;
+  }
+
+  .video-label {
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+  }
+}
+
+.teammate-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.teammate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.teammate-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.teammate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.teammate-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 330px;
+}
+
+.teammate-card h3 {
+  font-size: 18px;
+  color: #4a2e2e;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.teammate-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
 
 
 /* Image Hover Zoom for cards */

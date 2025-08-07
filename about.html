@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Laos & Korea</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .footer{
+      margin-top: 150px;
+    }
+
+    .image1{
+        top: 90px;
+        margin-right: 1150px;
+        width: 330px;
+        height: 380px;
+    }
+    .image2{
+        top: 130px;
+        margin-right: 370px;
+        width: 330px;
+        height: 280px;
+    }
+    .image3{
+        top: 90px;
+        margin-left: 375px;
+        width: 330px;
+        height: 380px;
+    }
+    .image4{
+         top: 140px;
+        margin-left: 1150px;
+        width: 330px;
+        height: 380px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="images/logo.png" alt="Catnappers Logo" class="logo-img" />
+    </div>
+
+    <nav class="navbar-links">
+      <a href="index.html" >Home</a>
+      <a href="about.html" class="active">About us</a>
+      <a href="popular.html">Popular place</a>
+      <a href="review.html">Review</a>
+    </nav>
+
+    <div class="navbar-right">
+      <div class="language-selector">
+        <div class="globe-toggle" onclick="toggleLanguageMenu()">
+          <img src="images/globe-icon.png" alt="Globe" class="globe-img" />
+          <span id="lang-label">EN</span>
+        </div>
+        <ul id="lang-menu" class="lang-menu">
+          <li onclick="setLanguage('EN')">English EN</li>
+          <li onclick="setLanguage('LA')">🇱ao LA</li>
+          <li onclick="setLanguage('KR')">Korean KR</li>
+        </ul>
+      </div>
+
+      <div class="auth-box">
+        <button onclick="location.href='signin.html'">Log in</button>
+        <button onclick="location.href='signup.html'">Sign in</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="fade-in">
+
+<section class="about-hero-section">
+  <div class="about-hero">
+    <h2>About Us</h2>
+    <p>we are students from Jeju University in korea and<br />Natioal University of Laos</p>
+  </div>
+
+  <div class="about-images">
+    <img src="images/laos1.png" alt="Patuxay Laos" class="image1"/>
+    <img src="images/korea1.png" alt="Korean Palace" class="image2" />
+    <img src="images/laos2.png" alt="Patuxay Fountain" class="image3"/>
+    <img src="images/korea2.png" alt="Namsan Tower" class="image4" />
+  </div>
+</section>
+
+</div>
+
+<section class="experience-section fade-in">
+  <h2>we can give you an experiences in <br><span>Laos and Korea</span></h2>
+
+  <!-- Block 1: Korea Experience -->
+  <div class="experience-row">
+    <div class="experience-text">
+      <p>
+        This website recommends travel destinations and food in Laos and Korea, 
+        with guides to popular places and must-try dishes like Lao laab and Korean kimchi jjigae. 
+        It also highlights the fusion of Lao and Korean cultures.
+      </p>
+    </div>
+    <div class="experience-image">
+      <img src="images/korea.png" alt="Korea experience">
+    </div>
+  </div>
+
+  <!-- Block 2: Laos Experience (Reversed) -->
+  <div class="experience-row reverse">
+      <div class="experience-text">
+          <p>
+              Lorem ipsum dolor sit amet consectetur. Amet arcu suspendisse fermentum sagittis erat mauris enim. 
+              Rutrum pretium a lobortis sit facilisis tempus. Nisl non lorem id sem ut ac egestas quis viverra. 
+              Mi magna neque mauris ac et risus accumsan. Lobortis sit facilisis tempus. 
+              Nisl non lorem id sem ut ac egestas quis viverra. Mi magna neque mauris ac et risus accumsan.
+            </p>
+        </div>
+        <div class="experience-image">
+          <div class="video-wrapper">
+            <video class="experience-video" autoplay muted loop playsinline>
+              <source src="images/laos.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <span class="video-label">Video</span>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+
+<section class="teammate-section">
+  <h2 class="section-title">Our Teammate</h2>
+  <div class="teammate-grid">
+    <div class="teammate-card">
+      <img src="images/ahnan.jpg" alt="Ahnan" />
+      <h3>Ahnan</h3>
+      <p>Beauty, with its charismatic vista. The land-locked country, enclosed within the terrific mountain ranges and the crystal-clear river.</p>
+    </div>
+    <div class="teammate-card">
+      <img src="images/seohee.png" alt="Seohee Hee" />
+      <h3>Seohee Hee</h3>
+      <p>Beauty, with its charismatic vista. The land-locked country, enclosed within the terrific mountain ranges and the crystal-clear river.</p>
+    </div>
+    <div class="teammate-card">
+      <img src="images/pone.png" alt="Pone" />
+      <h3>pone</h3>
+      <p>Beauty, with its charismatic vista. The land-locked country, enclosed within the terrific mountain ranges and the crystal-clear river.</p>
+    </div>
+    <div class="teammate-card">
+      <img src="images/seungjae.jpg" alt="Seungjae Bu" />
+      <h3>Seungjae Bu</h3>
+      <p>Beauty, with its charismatic vista. The land-locked country, enclosed within the terrific mountain ranges and the crystal-clear river.</p>
+    </div>
+    <div class="teammate-card">
+      <img src="images/moukda.png" alt="Moukda" />
+      <h3>Moukda</h3>
+      <p>Beauty, with its charismatic vista. The land-locked country, enclosed within the terrific mountain ranges and the crystal-clear river.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer class="footer fade-in">
+    <div class="footer-overlay">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logos">
+            <img src="images/jeju-logo.png" alt="Jeju logo" />
+            <img src="images/laos-logo.png" alt="Laos logo" />
+          </div>
+          <p>
+            Laos and Korea are known for their rich culture, delicious cuisine,
+            and breathtaking scenic landscapes. From serene temples in Luang
+            Prabang to the vibrant streets of Seoul, every corner offers
+            something unique. Dive into history, taste local delicacies, and enjoy
+            nature’s beauty in both countries.
+          </p>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <p>Home</p>
+            <p>About us</p>
+            <p>Tour planning</p>
+          </div>
+          <div class="footer-links">
+            <p>Privacy</p>
+            <p>Cookie</p>
+            <p>Copyright</p>
+          </div>
+          <div class="footer-contact">
+            <p>Contact us</p>
+            <p>lao.mobilej1233@gmail.com</p>
+            <p>+856 938 126 669</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- More sections will follow here... -->
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
